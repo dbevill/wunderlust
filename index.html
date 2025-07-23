@@ -236,26 +236,32 @@
             <p>Population: 923,608 </p>
 
         </section>
-        <section>
+        <section id="form">
             <h3>Contact Us </h3>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <label for="first-name">First Name<span class="required">*</span></label>  (Enter first name) 
+                <input id="first-name" type="text" name="first-name" placeholder="First" aria-required="true" required>
+                <label>Last Name<span class="required">*</span></label> (Enter last name) 
+                <input id="last-name" type="text" name="last-name" placeholder="Last" aria-required="true" required>
+                <fieldset>
+                    <legend>Contact Method<span class="required">*</span></legend>
+                    <input id="" type="" name="pref-method" value="">
+                    <label for="">Email</label>
+                    <input id="" type="" name="pref-method" value="">
+                    <label for="">Text</label>
+                    <input id="" type="" name="pref-method" value="">
+                    <label for="">Phone</label> 
+                </fieldset>
+                <label for="email">Email Address<span class="required">*</span></label> (Enter Email) 
+                <input id="email" type="text" name="email-address" placeholder="email.address@email.com" aria-required="true" required>
+                <label for="tel">Phone Number<span class="required">*</span></label> (Enter telephone number) 
+                <input id="tel" type="tel" name="phone-number" placeholder="123-456-7890" aria-required="true" required>
+                
 
-            First Name (Enter first name) 
+                Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia) 
 
-            Last Name (Enter last name) 
-
-            
-
-            Contact Method (Email, Text, Phone) 
-
-            Email Address (Enter Email) 
-
-            Phone Number (Enter telephone number) 
-
-            
-
-            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia) 
-
-            Travel Time (Fall, Winter, Spring, Summer, Flexible) 
+                Travel Time (Fall, Winter, Spring, Summer, Flexible)
+            </form> 
         </section>
     </main> 
     <footer>
