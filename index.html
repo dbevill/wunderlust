@@ -28,9 +28,26 @@
         <section>
             <h2>Majorca </h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p> 
-            <img src="images/images/majorca-waves-L.png" alt="majorca-waves">
-            <img src="images/images/majorca-beach-L.png" alt="majorca-beach">
-            <img src="images/images/majorca-cove-L.png" alt="majorca-cove">
+                    <picture>
+                        <source media="(min-width: 1024w)" srcset="images/images/majorca-waves-L"/>
+                        <source media="(min-width: 780w)" srcset="images/images/majorca-waves-M.png"/>
+                        <source media="(max-width: 320w)" srcset="images/images/majorca-waves-S.png"/>
+                        <img src="images/images/majorca-waves-L.png" alt="majorca-waves">
+                    </picture>
+                                        <picture>
+                        <source media="(min-width: 1024w)" srcset="images/images/majorca-beach-L.png"/>
+                        <source media="(min-width: 780w)" srcset="images/images/majorca-beach-M.png"/>
+                        <source media="(max-width: 320w)" srcset="images/images/majorca-beach-S.png"/>
+                        <img src="images/images/majorca-beach-L.png" alt="majorca-beach">
+                    </picture>
+                                        <picture>
+                        <source media="(min-width: 1024w)" srcset="images/images/majorca-cove-L.png"/>
+                        <source media="(min-width: 780w)" srcset="images/images/majorca-cove-M.png"/>
+                        <source media="(max-width: 320w)" srcset="images/images/majorca-cove-S.png"/>
+                        <img src="images/images/majorca-cove-L.png" alt="majorca-cove">
+                    </picture>
+            
+            
         </section>
         <section>
             <h3>Plan Your Trip </h3>
@@ -239,37 +256,49 @@
         <section id="form">
             <h3>Contact Us </h3>
             <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
-                <label for="first-name">First Name<span class="required">*</span></label>  (Enter first name) 
-                <input id="first-name" type="text" name="first-name" placeholder="First" aria-required="true" required>
-                <label>Last Name<span class="required">*</span></label> (Enter last name) 
-                <input id="last-name" type="text" name="last-name" placeholder="Last" aria-required="true" required>
+                <label for="first-name">First Name<span class="required">*</span></label>
+                <input id="first-name" type="text" name="first-name" placeholder="Enter first name" aria-required="true" required>
+                <label>Last Name<span class="required">*</span></label> 
+                <input id="last-name" type="text" name="last-name" placeholder="Enter last name" aria-required="true" required>
                 <fieldset>
                     <legend>Contact Method<span class="required">*</span></legend>
-                    <input id="" type="" name="pref-method" value="">
-                    <label for="">Email</label>
-                    <input id="" type="" name="pref-method" value="">
-                    <label for="">Text</label>
-                    <input id="" type="" name="pref-method" value="">
-                    <label for="">Phone</label> 
+                    <input id="pref-email" type="radio" name="pref-method" value="pref-email" checked>
+                    <label for="pref-email">Email</label>
+                    <input id="pref-text" type="radio" name="pref-method" value="pref-text">
+                    <label for="pref-text">Text</label>
+                    <input id="pref-phone" type="radio" name="pref-method" value="pref-phone">
+                    <label for="pref-phone">Phone</label> 
                 </fieldset>
-                <label for="email">Email Address<span class="required">*</span></label> (Enter Email) 
-                <input id="email" type="text" name="email-address" placeholder="email.address@email.com" aria-required="true" required>
-                <label for="tel">Phone Number<span class="required">*</span></label> (Enter telephone number) 
-                <input id="tel" type="tel" name="phone-number" placeholder="123-456-7890" aria-required="true" required>
-                
-
-                Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia) 
-
-                Travel Time (Fall, Winter, Spring, Summer, Flexible)
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input id="email" type="text" name="email-address" placeholder="Enter Email" aria-required="true" required>
+                <label for="tel">Phone Number<span class="required">*</span></label>
+                <input id="tel" type="tel" name="phone-number" placeholder="Enter telephone number" aria-required="true" required>
+                <label for="my-destination">Destination</label>
+                <select name="my-destination" id="my-destination">
+                    <option value="barcelona">Barcelona</option>
+                    <option value="granada">Granada</option>
+                    <option value="ibiza">Ibiza</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="majorca">Majorca</option>
+                    <option value="seville">Seville</option>
+                    <option value="tenerife">Tenerife</option>
+                    <option value="valencia">Valencia</option>
+                </select>
+                <label for="my-travel-time">Travel Time</label>
+                <select name="my-travel-time" id="my-travel-time">
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="flexible">Flexible</option>
+                </select>
             </form> 
         </section>
     </main> 
     <footer>
-    Copyright 2021 Wunderlust 
-
-    Privacy Statement 
-
-    Terms of Service
+        <p><small>Copyright &copy; 2021 Wunderlust</small></p> 
+        <p><small>Privacy Statement </small>
+        <p><small>Terms of Service</small>
     </footer>
 </body>
 </html>
