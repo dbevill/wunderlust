@@ -164,6 +164,7 @@ small{
 nav{
 	font-family: "Montserrat";
 	font-weight: 400;
+	text-decoration: none;
 }
 button{
 	font-family: "Montserrat";
@@ -173,6 +174,7 @@ form{
 	font-family: "Montserrat";
 	font-weight: 400;
 }
-nav li{
-	list-style: none;
+/*------MOBILE FIRST------*/
+@media screen and (max-width: 480px){
+	
 }
