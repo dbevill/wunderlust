@@ -1,7 +1,7 @@
 /*Dante Bevill*/
 
 /*------IMPORTED FONTS------*/
-/* @import url('https://fonts.google.com/share?selection.family=Molle:ital@1%7CMontserrat');*/
+/* @import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&family=Montserrat:wght@400;600&display=swap");*/
 
 /*------CSS RESET------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -126,8 +126,8 @@ table {
 	height: auto;
 }
 /*------BODY STYLES------*/
-body{
-	font-family: "Montserrat";
+/*body{
+	font-family: "Montserrat", "Molle", serif;
 }
 /*------HEADINGS------*/
 h1{
@@ -137,11 +137,42 @@ h1{
 }
 h2{
 	font-family: "Molle";
+	font-weight: 400;
+	font-style: italic;
 } 
 h3{
 	font-family: "Molle";
-
+	font-weight: 400;
+	font-style: italic;
 }
 h4{
 	font-family: "Montserrat";
+	font-weight: 400;
+}
+p{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+q{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+small{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+nav{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+button{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+form{
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+nav li{
+	list-style: none;
 }
