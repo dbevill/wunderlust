@@ -120,3 +120,28 @@ table {
 	height: 1px;
 	overflow: hidden;
 }
+#skip:focus{
+	position: static;
+	width: auto;
+	height: auto;
+}
+/*------BODY STYLES------*/
+body{
+	font-family: "Montserrat";
+}
+/*------HEADINGS------*/
+h1{
+	font-family: "Molle";
+	font-weight: 400;
+	font-style: italic;
+}
+h2{
+	font-family: "Molle";
+} 
+h3{
+	font-family: "Molle";
+
+}
+h4{
+	font-family: "Montserrat";
+}
