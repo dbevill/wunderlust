@@ -174,7 +174,12 @@ form{
 	font-family: "Montserrat";
 	font-weight: 400;
 }
-/*------MOBILE FIRST------*/
-@media screen and (max-width: 480px){
+/*------MEDIUM SCREENS------*/
+@media screen and (min-width: 600px){
+	
+}
+/*------LARGE SCREENS------*/
+@media screen and (min-width: 1200px){
+	
 	
 }
