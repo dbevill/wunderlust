@@ -22,24 +22,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -101,7 +83,7 @@ table {
 }
 /*--------GLOBAL STYLES--------*/
 :root{
-	--yellow:var(--yellow); 
+	--yellow: #F6D64A; 
 	--teal: #55BCD5; 
 	--purple: #9B26B0; 
 	--blue: #499BD2; 
@@ -109,7 +91,9 @@ table {
 	--light-gray: #EAEAEA; 
 	--white: #FFFFFF; 
 	--black: #000000; 
-	--font-family: "Montserrat", "Molle", serif;
+	--font-body: "Montserrat", sans-serif;
+	--font-display: "Molle", serif;
+	font-size: 16px;
 }
 /*------SKIP LINK STYLES------*/
 #skip{
@@ -125,19 +109,231 @@ table {
 	width: auto;
 	height: auto;
 }
+.sr-only{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
 /*------BODY STYLES------*/
 body{
 	font-family: "Montserrat", "Molle", serif;
+	display: grid;
+	grid-template-columns: 1fr;
 }
+main{
+	width: calc(100% - 2rem);
+	max-width: 1200px;
+	margin: 2rem auto;
+}
+main p{
+	text-align: left;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	line-height: 2.5;
+}
+#intro img{
+	display: block;
+	width: 100%;
+	padding-bottom: 20px;
+}
+#plan{
+	background-color: #F6D64A;
+	padding: 1rem;
+}
+#plan h3, #plan h4{
+	text-align: center;
+	font-size: 25px;
+	padding: 0.5rem;
+}
+#plan h4{
+	z-index: 1;
+}
+#plan img{
+	display: block;
+	background-color:#55BCD5;
+	margin: 0 auto;
+	padding: 2.5rem;
+	border-radius: 5px;
+	border: 3px solid #FFFFFF;
+	width: 50%;
+}
+#testimonials p{
+	display: grid;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#testimonials q{
+	display: grid;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#testimonials h3{
+	text-align: left;
+	font-size: 40px;
+	padding: 1.5rem;
+}
+#testimonials h4{
+	font-size: 40px;
+	text-align: center;
+	font-weight: 600;
+}
+#testimonials img{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#about h3{
+	text-align: left;
+	font-size: 40px;
+	padding: 1.5rem;
+}
+footer{
+	background-color: #EAEAEA;
+	text-align: center;
+	font-family: "Montserrat";
+}
+/*------HEADER STYLES------*/
+header{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	background: linear-gradient(#55BCD5, #FFFFFF);	
+}
+header p{
+	grid-row: 2;
+	grid-column: 1/-1;
+	text-align:justify;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 75px;
+}
+h1{
+	margin: 0 auto;
+	grid-row: 2;
+	grid-column: 1/-1;
+	padding: 0px;
+}
+nav{
+	grid-row: 1;
+	grid-column: 2;
+}
+nav label{
+	background-color:#F6D64A;
+}
+#menu-toggle{
+	display: block;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+		user-select: none;
+}
+#menu-toggle a{
+	text-decoration: none;
+	background-color: #55BCD5;
+	-webkit-transition: color 0.3 ease;
+	-o-transition: color 0.3 ease;
+	transition: color 0.3 ease;
+}
+#menu-toggle a:hover{
+	color: #FFFFFF;
+}
+#menu-toggle input{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+}
+#menu-toggle label{
+	position: relative;.
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+#menu-toggle label span{
+	display: none;
+}
+#menu-toggle label div{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 6px;
+	position: relative;
+	background:#55BCD5;
+	z-index: 1;
+	-webkit-transform-origin: 4px 0px;
+		-ms-transform-origin: 4px 0px;
+			transform-origin: 4px 0px;
+	-webkit-transition: all 0.3 ease;
+	-o-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+}
+#menu-toggle label div:first-child{
+	-webkit-transform-origin: 0% 100%;
+		-ms-transform-origin: 0% 100%;
+			transform-origin: 0% 100%;
+}
+#menu-toggle label div:nth-child(2){
+	-webkit-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
+			transform-origin: 0% 0%;
+}
+#menu-toggle input:checked + label div{
+	background: #000000;
+}
+#toggle li{
+	padding: 10px 10;
+	font-size: 22px;
+}
+#menu-toggle input:checked ~ ul{
+	top: 0;
+}
+
+nav a, nav ul{
+	font-family: "Montserrat";
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #55BCD5;
+	color: #000000;
+	width: 100%;
+	display: grid;
+	text-align: center;
+	border-radius: 0;
+	border: 1px solid #000000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0 auto;*/
+}
+nav h2{
+	visibility: hidden;
+	height: 0;
+}
+
 /*------HEADINGS------*/
 h1{
 	font-family: "Molle";
-	font-weight: 400;
+	font-weight: bold;
 	font-style: italic;
+	font-size: 50px;
+	padding: 1rem;
 }
-h2{
+main h2{
 	font-family: "Molle";
-	font-weight: 400;
+	font-weight: normal;
+	font-size: 35px;
+	padding: 1rem;
 	font-style: italic;
 } 
 h3{
@@ -147,7 +343,7 @@ h3{
 }
 h4{
 	font-family: "Montserrat";
-	font-weight: 400;
+	font-size: 30px;
 }
 p{
 	font-family: "Montserrat";
@@ -161,11 +357,7 @@ small{
 	font-family: "Montserrat";
 	font-weight: 400;
 }
-nav{
-	font-family: "Montserrat";
-	font-weight: 400;
-	text-decoration: none;
-}
+
 button{
 	font-family: "Montserrat";
 	font-weight: 400;
