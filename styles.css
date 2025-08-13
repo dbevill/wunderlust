@@ -218,28 +218,79 @@ form{
 #contact{
 	display: block;
 	width: 300px;
-	padding: 1em;
+	padding: 2em;
 	margin: 0 auto;
-	/*border: #9B26B0;
-	font-size: 1.1em;*/
+	width: 90%;
 }
 input, label, fieldset{
 	display:block;
-	width: 95%;
+	width: 80%;
+	font-size: medium;
+	/*padding: 1rem;*/
 }
-
+#contact input{
+	border: 3px solid #9B26B0;
+	padding: 1rem;
+}
 #contact h3{
 	text-align: center;
 	font-family: "Molle";
+	font-size: 25px;
 }
 #contact span{
 	text-align: center;
 	font-family: "Montserrat";
+	font-size: 16px;
+}
+#names label{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+#names span, legend span{
+	color: #9B26B0;
+}
+#nums legend{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+#nums label{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+select{
+	border: 3px solid #9B26B0;
+	padding: 1rem;
+	width: 90%;
+	margin-top: 5px;
+}
+#selects label{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+input[type=submit]{
+	background-color: #9B26B0;
+	color: #FFFFFF;
+	width: 90%;
 }
 footer{
 	background-color: #EAEAEA;
 	text-align: center;
 	font-family: "Montserrat";
+	padding: 1.5rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+footer p{
+	padding: 1rem;
+}
+footer a{
+	text-decoration: none;
+	color: #000000;
+	padding: 1rem;
 }
 /*------HEADER STYLES------*/
 header{
