@@ -126,7 +126,7 @@ body{
 main{
 	width: calc(100% - 2rem);
 	max-width: 1200px;
-	margin: 2rem auto;
+	margin: 1rem auto;
 }
 main p{
 	text-align: left;
@@ -201,7 +201,7 @@ main p{
 }
 #about h3{
 	text-align: left;
-	font-size: 40px;
+	font-size: 50px;
 	padding: 1.5rem;
 }
 #about h4{
@@ -210,10 +210,13 @@ main p{
 }
 #about p{
 	text-align: center;
+	font-size: 25px;
 }
 form{
 	font-family: "Montserrat";
 	font-weight: 400;
+	display: block;
+	width: 100%;
 }
 #contact{
 	display: block;
@@ -225,8 +228,8 @@ form{
 input, label, fieldset{
 	display:block;
 	width: 80%;
-	font-size: medium;
-	/*padding: 1rem;*/
+	font-size: 25px;
+	padding: 1rem;
 }
 #contact input{
 	border: 3px solid #9B26B0;
@@ -235,12 +238,24 @@ input, label, fieldset{
 #contact h3{
 	text-align: center;
 	font-family: "Molle";
-	font-size: 25px;
+	font-size: 50px;
 }
 #contact span{
 	text-align: center;
 	font-family: "Montserrat";
-	font-size: 16px;
+	font-size: 25px;
+}
+fieldset{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+input[type="radio"]{
+	width: 50px;
+	height: 50px;
+	accent-color: #9B26B0;
+	background-color: #9B26B0;
+	display: grid;
+	grid-column: 1;
 }
 #names label{
 	padding-top: 15px;
@@ -275,6 +290,7 @@ input[type=submit]{
 	background-color: #9B26B0;
 	color: #FFFFFF;
 	width: 90%;
+	margin-top: 25px;
 }
 footer{
 	background-color: #EAEAEA;
@@ -296,7 +312,7 @@ footer a{
 header{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr 1fr;*/
 	background: linear-gradient(#55BCD5, #FFFFFF);	
 }
 header p{
@@ -319,11 +335,11 @@ nav{
 }
 nav label{
 	background-color:#F6D64A;
-}
+}/*
 #menu-toggle{
 	display: block;
 	position: relative;
-	top: 0px;
+	top: 10px;
 	z-index: 1;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -338,29 +354,35 @@ nav label{
 }
 #menu-toggle a:hover{
 	color: #FFFFFF;
-}
+}*/
 #menu-toggle input{
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 0px;
+	height: 0px;
 	position: absolute;
-	top: -7px;
 	left: -5px;
 	padding: 0;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
-	-webkit-touch-callout: none;
+	/*-webkit-touch-callout: none;*/
 }
 #menu-toggle label{
 	position: relative;.
 	display: block;
-	width: 30px;
+	width: 90%;
 	height: 30px;
-}
-#menu-toggle label span{
-	display: none;
-}
+	padding: 15px;
+	top: 5px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	border-radius: 2px;
+	z-index: 1;
+	/*padding-right: 5px;*/
+}/*
 #menu-toggle label div{
 	display: block;
 	width: 30px;
@@ -392,25 +414,26 @@ nav label{
 #toggle li{
 	padding: 10px 10;
 	font-size: 22px;
+	flex-direction: column;
 }
 #menu-toggle input:checked ~ ul{
 	top: 0;
-}
+}*/
 
-nav a, nav ul{
+nav a{
 	font-family: "Montserrat";
 	font-weight: bold;
 	text-decoration: none;
 	background-color: #55BCD5;
 	color: #000000;
-	width: 100%;
+	width: 90%;
+	padding: 10px;
 	display: grid;
 	text-align: center;
 	border-radius: 0;
 	border: 1px solid #000000;
 	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 0 auto;*/
+	margin: 0 auto;
 }
 nav h2{
 	visibility: hidden;
