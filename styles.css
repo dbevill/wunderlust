@@ -132,7 +132,7 @@ main p{
 	text-align: left;
 	padding-bottom: 25px;
 	padding-left: 10px;
-	line-height: 2.5;
+	line-height: 2;
 }
 #intro img{
 	display: block;
@@ -143,21 +143,30 @@ main p{
 	background-color: #F6D64A;
 	padding: 1rem;
 }
+#plan section{
+	padding-bottom: 1rem;
+}
 #plan h3, #plan h4{
 	text-align: center;
-	font-size: 25px;
 	padding: 0.5rem;
+}
+#plan h3{
+	text-align: center;
+	padding: 0.5rem;
+	font-size: 40px;
 }
 #plan h4{
 	z-index: 1;
+	position: inline;
+	font-weight: bold;
 }
 #plan img{
 	display: block;
 	background-color:#55BCD5;
 	margin: 0 auto;
-	padding: 2.5rem;
+	padding: 3rem;
 	border-radius: 5px;
-	border: 3px solid #FFFFFF;
+	border: 5px solid #FFFFFF;
 	width: 50%;
 }
 #testimonials p{
@@ -225,7 +234,7 @@ form{
 	margin: 0 auto;
 	width: 90%;
 }
-input, label, fieldset{
+input, label, fieldset, select{
 	display:block;
 	width: 80%;
 	font-size: 25px;
@@ -262,7 +271,7 @@ input[type="radio"]{
 	padding-bottom: 5px;
 	font-weight: bold;
 }
-#names span, legend span{
+.required{
 	color: #9B26B0;
 }
 #nums legend{
@@ -280,6 +289,9 @@ select{
 	padding: 1rem;
 	width: 90%;
 	margin-top: 5px;
+}
+.focus{
+	font-size: 25px;
 }
 #selects label{
 	padding-top: 15px;
