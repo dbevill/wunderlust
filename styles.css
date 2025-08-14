@@ -522,7 +522,6 @@ button{
 	}
 	nav ul{
 		display: inline-flex;
-		/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
 		grid-gap: 1.5rem;
 		padding-top: 15px;
 	}
@@ -546,9 +545,102 @@ button{
 	picture{
 		grid-column: 1/-1;
 	}
+	#plan h3{
+		text-align: left;
+	}
+	#plan div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	#plan img{
+		width: 200px;;
+		height: 200px;
+	}
+	#testimonials div{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	#about div{
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	#about{
+		padding: 5px;
+		width: 100%;
+	}
+	#about img{
+		width: 100px;
+		height: 100px;
+	}
+	#about h4{
+		font-size: 25px;
+		font-weight: bold;
+	}
+	#about p{
+		font-size: 20px;
+	}
+	#contact div{
+		width: 100%;
+	}
+	fieldset{
+		display: flex;
+		margin: 1rem auto;
+	}
+	fieldset label, fieldset input{
+		display: inline-block;
+	}
+	footer{
+		background-color: #EAEAEA;
+		display: flex;
+		padding: 0;
+		justify-content: space-evenly;
+	}	
+	footer a{
+		text-decoration: none;
+		color: #000000;
+	}
+
 }
 /*------LARGE SCREENS------*/
 @media screen and (min-width: 1024px){
-	
+	#plan{
+		padding: 0;
+	}
+	#plan h4{
+		font-size: 25px;
+	}
+	#plan div{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#plan img{
+		width: 100px;
+		height: 100px;
+	}
+	#testimonials div{
+		display: flex;
+		padding: 0;
+		justify-content: space-evenly;
+	}
+	#contact div{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#names{
+		grid-column: 1;
+		/*grid-row: 1/-1;*/
+	}
+	#nums{
+		grid-column: 2/3;
+		/*grid-row: 1/-1;*/
+	}
+	#selects{
+		grid-column: 3;
+		/*grid-row: 1/-1;*/
+	}
 	
 }
