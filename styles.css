@@ -324,7 +324,6 @@ footer a{
 header{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/*grid-template-rows: 1fr 1fr 1fr;*/
 	background: linear-gradient(#55BCD5, #FFFFFF);	
 }
 header p{
@@ -495,11 +494,61 @@ button{
 }
 
 /*------MEDIUM SCREENS------*/
-@media screen and (min-width: 600px){
-	
+@media screen and (min-width: 780px){
+	header{
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-top: 1.5rem;
+		grid-template-rows: 1fr;
+	}
+	header img{
+		grid-row: 1;
+		grid-column: 1;
+	}
+	h1{
+		margin: 0 auto;
+		grid-row: 1;
+		grid-column: 2;
+		padding: 0px;
+		text-align: left;
+	}
+	header p{
+		grid-column: 2/-1;
+		grid-row: 1;
+	}
+	nav{
+		grid-column: 2/-1;
+		grid-row: 2;
+	}
+	nav ul{
+		display: inline-flex;
+		/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+		grid-gap: 1.5rem;
+		padding-top: 15px;
+	}
+	nav a{
+		background-color: #FFFFFF;
+		border: none;
+	}
+	#menu-toggle label{
+		display: none;
+	}
+	#intro{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	#img-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+	picture{
+		grid-column: 1/-1;
+	}
 }
 /*------LARGE SCREENS------*/
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
 	
 	
 }
