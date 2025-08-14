@@ -618,6 +618,10 @@ button{
 	#intro p, h2{
 		grid-column: 1;
 	}
+	#intro p{
+		padding-left: 0;
+		padding-right: 10px;
+	}
 	#img-grid{
 		grid-column: 2;
 	}
