@@ -446,6 +446,9 @@ nav a{
 	padding-top: 15px;
 	margin: 0 auto;
 }
+nav a:hover{
+	background-color:#F6D64A;
+}
 nav h2{
 	visibility: hidden;
 	height: 0;
@@ -627,8 +630,39 @@ button{
 	#about p{
 		padding-left: 0px;
 	}
-	
-	
+	header{
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr;
+		padding-top: 1.5rem;
+		grid-template-rows: 1fr;
+	}
+	h1{
+		margin: 0 auto;
+		grid-row: 1;
+		grid-column: 2;
+		padding-top: 30px;
+		text-align: left;
+		padding-bottom: 20px;
+	}
+	header img{
+		grid-row: 1;
+		grid-column: 1;
+	}
+	header p{
+		grid-column: 2/-1;
+		grid-row: 1;
+		padding-left: 0px;
+	}
+	nav{
+		grid-column: 3/-1;
+		grid-row: 1;
+		top: 0;
+		right: 0;
+		position: fixed;
+	}
+	nav a{
+		
+	}
 	
 	#plan{
 		padding: 1.5rem;
