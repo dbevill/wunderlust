@@ -606,8 +606,32 @@ button{
 }
 /*------LARGE SCREENS------*/
 @media screen and (min-width: 1024px){
+	#intro{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		margin:auto;
+	}
+	#intro p, h2{
+		grid-column: 1;
+	}
+	#img-grid{
+		grid-column: 2;
+	}
+	#img-grid img{
+		padding-bottom: 0px;
+	}
+	#img-grid picture{
+		padding-bottom: 10px;
+	}
+	#about p{
+		padding-left: 0px;
+	}
+	
+	
+	
 	#plan{
-		padding: 0;
+		padding: 1.5rem;
 	}
 	#plan h4{
 		font-size: 25px;
@@ -622,8 +646,14 @@ button{
 	}
 	#testimonials div{
 		display: flex;
-		padding: 0;
+		padding: 2rem;
 		justify-content: space-evenly;
+	}
+	#testimonials h4{
+		font-size: 25px;
+	}
+	#testimonials section{
+		padding: 10px;
 	}
 	#contact div{
 		display: grid;
