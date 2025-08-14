@@ -652,16 +652,15 @@ button{
 		grid-column: 2/-1;
 		grid-row: 1;
 		padding-left: 0px;
+		margin-top: 10px;
 	}
 	nav{
 		grid-column: 3/-1;
 		grid-row: 1;
 		top: 0;
 		right: 0;
-		position: fixed;
-	}
-	nav a{
-		
+		position: absolute;
+		margin-top: 0px;
 	}
 	
 	#plan{
@@ -689,22 +688,4 @@ button{
 	#testimonials section{
 		padding: 10px;
 	}
-	#contact div{
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
-	#names{
-		grid-column: 1;
-		/*grid-row: 1/-1;*/
-	}
-	#nums{
-		grid-column: 2/3;
-		/*grid-row: 1/-1;*/
-	}
-	#selects{
-		grid-column: 3;
-		/*grid-row: 1/-1;*/
-	}
-	
 }
